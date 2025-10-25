@@ -10,8 +10,8 @@ from dataclasses import dataclass
 class DatabaseConfig:
     host: str = os.getenv("FSDU3_DB_HOST", "localhost")
     port: int = int(os.getenv("FSDU3_DB_PORT", "3306"))
-    user: str = os.getenv("FSDU3_DB_USER", "akarsh")
-    password: str = os.getenv("FSDU3_DB_PASSWORD", "Akar$h1312")
+    user: str = os.getenv("FSDU3_DB_USER", "user")
+    password: str = os.getenv("FSDU3_DB_PASSWORD", "password")
     database: str = os.getenv("FSDU3_DB_NAME", "fsdu3")
 
 
